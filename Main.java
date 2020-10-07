@@ -23,6 +23,7 @@ public class Main {
 
     // create a for loop to count up to the number
     for(int count = startNumber; count <= endNumber; count = count + 2){
+      // print out the numbers counting
       System.out.println(count);
     }
     
