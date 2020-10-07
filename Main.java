@@ -21,11 +21,15 @@ public class Main {
     System.out.println("What number do you want to end counting at?");
     int endNumber = input.nextInt();
 
+    // find out if the number is odd or even
+      if(startNumber % 2 != 0){
+        startNumber = startNumber + 1;
+      
     // create a for loop to count up to the number
     for(int count = startNumber; count <= endNumber; count = count + 2){
       // print out the numbers counting
       System.out.println(count);
     }
-    
+      }
   }
 }
