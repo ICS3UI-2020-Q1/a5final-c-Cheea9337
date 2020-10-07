@@ -22,14 +22,21 @@ public class Main {
     int endNumber = input.nextInt();
 
     // find out if the number is odd or even
-      if(startNumber % 2 != 0){
-        startNumber = startNumber + 1;
+      if(startNumber % 2 == 0){
       
     // create a for loop to count up to the number
     for(int count = startNumber; count <= endNumber; count = count + 2){
       // print out the numbers counting
       System.out.println(count);
     }
+      }else if(startNumber % 2 != 0){
+        // add one to the start number to make the number even
+        startNumber = startNumber + 1;
+        // create a second for loop to count up
+        for(int count2 = startNumber; count2 <= endNumber;count2 = count2 + 2){
+          // print out the numbers
+          System.out.println(count2);
+        }
       }
   }
 }
